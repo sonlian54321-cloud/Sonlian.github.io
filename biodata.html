@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+<meta charset="UTF-8">
+<mata name="viewport" content="width-device-width,initial-scale=1.0">
+<title>Biodata Form</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+maagin: 30px;
+} 
+label {
+display: block;
+margin-top: 10px;
+}
+input, textarea {
+width: 300px;
+padding: 5px;
+margin-top: 5px;
+}
+button{
+margin-top: 15px;
+padding:8px 15px;
+} 
+.output-top: 20px
+margin-top: 20px;
+border: 1px solid #ccc;
+padding: 15px;
+width: 350px;
+}
+</style>
+</head>
+<body>
+
+<h2>Enter Your Biodata</h2>
+<form id="biodataForm">
+<label for="name">Full Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="dob">Date of Birth:</label>
+<input type="date"id="dob" name="dob" required>
+
+<label for="address">Address:</label>
+<textarea id="address" name="address" rows="3"
+required></textarea>
+
+<label for="mobile">Moblie Number:</label>
+<input type="text' id="mobile" name="mobile" required pattern="[0-9]{10}" maxlength="10" placeholder="10- digit number">
+
+<button type="button" onclick="submitBiodata()"Submit</button>
+</form>
+
+<div class="output" id="output" style="display:none;">
+<h3>Your Biodata:</h3>
+<p><strong>Name:</strong><span id="outName"></span></p>
+<p><strong>Date of Birth:</strong><span id="outDob"></span></p>
+<p><strong>Address:</strong><span id="outAddress"></span></p>
+<p><strong>Mobile No:</strong><span id="outMobile"></span></p>
+<div>
+
+<script>
+// Restrict mobile input to digits only while typing
+const mobileInput = document.getElementById('mobile');
+mobileInput.addEventListener('input',function() {
+this.value = this value.replace(/^0-9]/g,");
+})'
+
+functional submitBiodata() {
+// Get values
+const name =
+document.getElementById('name').value;
+const dob =
+document.getElementById('dob').value;
+const address=
+document.getElementById('address').value;
+const mobile =
+document.getElementById('mobile').value;
+
+if(mobile.length !==10 {
+alert('Mobile number must be 10 digits.');
+return;
+}
+//Show output
+document.getElementById('outName').innerText
+=naME;
+document.getElementById('outDob').innerText =
+dob;
+document.getElementById('outAddress').innerText =
+address;
+document.getElementById('outMobile').innerText =
+mobile;
+document.getElementById('output').style.display
+= 'block';
+</script>
+
+</body>
+</html>
+
+
