@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<mata name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Sonlian- Paite Stories & AI</title>
+
+<!--Simple, in-page CSS for begineers-->
+<style>
+:root {
+--bg: #f7f7fb;
+--card: #ffffff;
+--accent: #0b74de;
+--text: #222;
+}
+body {
+margin: 0;
+font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial;
+background: var(--bg);
+color:var(--text);
+line-height:1.5;
+padding:24px;
+}
+.container {
+max-width:900px;
+margin:20px auto;
+padding:20px;
+}
+header{
+display:flex;
+align-items:center;
+gap:16px;
+margin-bottom:18px;
+}
+.logo{
+width:72px;
+height:72px;
+background: linear-gradient(135deg,#0b74de,#6ec1ff);
+border-radius:12px;
+display:inline-flex;
+align-items: center;
+justify-content: center;
+color:white;
+font-weight:700;
+font-size:20px;
+}
+h1 {margin: 0,font-size: 1.6rem;}
+p.lead { color:#444; margin-top: 6px; marign-bottom:18px; }
+
+.card {
+background:var(--card);
+border-radius:12px;
+padding:18px;
+box-shadow: 0 6px 20px rgba (20,20,40,0.04);
+margin-bottom:18px;
+}
+.buttons {display:flex;gap:10px;flex-warp;margin-top:12px }
+.btn {
+display:inline-block;
+padding:10px 14px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+}
+.btn-primary {background:var(--accent); color:white;}
+.btn-outline {border:1px solid #ddd; color:#333; background:white; }
+
+/*Responsive embed for YouTube*/
+.video-warp {position:relative;padding-top:56.25%; /* 16.9*/}
+.video-warp iframe {position:absolute;left:0;top:0; width:100%;height:100%;border:0;}
+
+footer {text-align:center:#666; font-size:0.9rem; marigin-top:28px;}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo">GV</div>\
+<div>
+<h1>Sonlian- paite Stories % AI<h1/>
+<P> class="lead">Traditional Paite floktales,AI prompts, and video guides.Join my Telegram for updates:
+<strong>t.me/SonlianAIHub</strong></p>
+</div>
+</header>
+
+<!--Intro card-->
+<section class= "card">
+<h2>Welcome</h2>
+<p>This is a simple starter webpage.Edit the content below to show your storybook, PDF, or YouTube Channel.Use this file as your homepage (index.html).</p>
+
+<div class="buttons">
+<a class="btn btn-primary" herf="https://t.me/SonlianAIHub"target="_blank" rel="noopener">Join Telegram</a>
+<a class="btn btn-outline" href="#about">About</a>
+<div/>
+</section>
+
+<!--About / story -->
+<section id="about" class="card">
+<h2>About Lengtonghoih (simple)<h2/>
+<p>Here you can paste a short Paite story excert or summary. Keep paragraphs short for easier reading on mobile.</p>
+
+<h3>Sample excerpt</h3>
+<p>
+"Lengtonghoih hi a nuai khua nupu,mit a hih man in a thuak lam..."- paste your paite text here.
+</p>
+</section>
+
+<!YouTube embed-->
+<section class="card">
+<h2>Featured Video</h2>
+<div class="video-warp">
+<!--Replace the src with your video ID:https://www.youtube.com/embed/VIDEO_ID-->
+<iFrame src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" allow="accelerometer;
+autoplay; clipboard-write;encrypted-media;gyroscope;picture-in-picture"allowfullscreen></iframe>
+</div>
+<p style="margin-top:10px;:>Tip:set 'VIDEP_ID 'to your own Youtube VIdeo code (the characters after 'v'= in the video URL).</p>
+</section>
+<--Download / Products-->
+<section class="card">
+<h2>Sell PDF / Prompts</h2>
+<p>Offer a sample:ad a link to a preview PDF or to your Gumroad / Payhip product.</p>
+<ul>
+<li><strong>Sample PDF:</strong><a href="#" download>Download preview</a><li>
+<li><strong>Buy full version:</strong><a href=https://gumroad.com/"target="_blank"
+rel="noopener">Gumroad</a><li>
+</ul>
+</section>
+
+<footer>
+*<span id='year"></span> Sonlian - made with ;
+</footer>
+</div>
+
+<script>
+// Small script to update the year and set sample video ID quickly 
+document.getElementById('year').textContent = new Data().getFullYear();
+// If you want to set the YouTube video ID using JS, uncomment and change below:
+// const VIDEO_ID = 'your_video_id_here';
+// document.querySelector('.video-warp iframe').src = 'https://www.youtube.com/embed/' + VIDEO_ID;
+</scipt>
+</body>
+</html>
