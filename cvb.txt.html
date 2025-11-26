@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+<meta charset="UPF-8">
+<meta name=viewport" content=width=device-width,initial-scale=1.0">
+<title>login Form (HTML+JS)</title>
+<style>
+body {
+font-family:Arial,sans-serif;
+background:#f4f4f9;
+display:flex;
+justify-content:centre;
+align-items:centre;
+height:100vh;
+}
+.login-box{
+background:white;
+padding:30px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+width:300px;
+}
+.login-box h2{
+text-align:center;
+margin-bottom:20px;
+}
+.login-box input{ width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:5px;
+}
+.login-box button{
+width:100%;
+Padding:1px;
+background:#4CAF50;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+.login-box button:hover{
+background:#45a049;
+}
+</style>
+</head>
+<body>
+<div class="login-box">
+<h2>Login</h2>
+<form onsubmit="returncheckLogin()">
+<input type="text" id="username" placeholder="Enter Username" required>
+<input type="password" id="password" placeholder="Enter Password" required>
+<button type="submit"Login</button>
+</form>
+</div>
+
+<script>
+function checkLogin(){
+// Fixed username and password
+const correctUsername="Sonlian";
+const correctPassword="2005:
+
+//Get input values
+const user=document.getElementByld("username").value;
+const pass=document.getElementByld("password").
+//check
+if (user===correctUsername && pass === correctPassword){
+alter("Login Successful";
+return true;
+}else{
+alter("invalild Username or Password ");
+return false;
+}
+}
+</script>
+</body>
+</html>
