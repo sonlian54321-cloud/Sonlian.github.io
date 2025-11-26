@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?
+<width id="com.example.mycordovaapp"
+version="1.0.0"
+xmins="http://www.w3.org/ns/widgets"
+xmins:cdv="http://cordova.apache.org/ns/1.0">
+
+<name>MyCordovaApp</name>
+<description>A simple Cordova Android app using HTML.</description>
+<author email="you@example.com">Your Name</author>
+
+<content src="index.html"/>
+
+<preference name="Fullscreen" value="true"/>
+<preference name="Orientation" value="portrait"/>
+
+<allow-navigation href="*"/>
+<allow-intent href="*"/>
+
+<plugin name="cordova-plugin-whitelist"/>
+</widget>
